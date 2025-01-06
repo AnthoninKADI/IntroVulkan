@@ -26,7 +26,7 @@ if (NOT SDL3_FOUND) # If there's none, fetch and build SDL3
 endif()
 
 file( GLOB graphics-with-SDL3_SOURCES *.cpp )
-add_executable(${PROJECT_NAME} ${graphics-with-SDL3_SOURCES} "Window.hpp" "Window.cpp" "Time.hpp" "Time.cpp" "InputState.hpp" "Scene.hpp" "Scene01Clear.cpp" "Renderer.cpp" "Scene02Triangle.cpp")
+add_executable(${PROJECT_NAME} ${graphics-with-SDL3_SOURCES} "Window.hpp" "Window.cpp" "Time.hpp" "Time.cpp" "InputState.hpp" "Scene.hpp" "Scene01Clear.cpp" "Renderer.cpp" "Scene02Triangle.cpp" "Scene03TriangleVertexBuffer.cpp" "Scene04TriangleCullModes.cpp")
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${SDL3_INCLUDE_DIRS})
 target_link_libraries(${PROJECT_NAME} SDL3::SDL3)

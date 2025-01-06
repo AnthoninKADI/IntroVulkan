@@ -6,8 +6,10 @@
     ]
   },
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Content",
+    "\\Content\\Shaders"
   ],
-  "SelectedNode": "\\Renderer.cpp",
+  "SelectedNode": "\\Scene04TriangleCullModes.cpp",
   "PreviewInSolutionExplorer": false
 }

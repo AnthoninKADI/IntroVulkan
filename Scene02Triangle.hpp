@@ -15,8 +15,8 @@ private:
 	SDL_GPUShader* fragmentShader;
 	SDL_GPUGraphicsPipeline* fillPipeline;
 	SDL_GPUGraphicsPipeline* linePipeline;
-	SDL_GPUViewport smallViewport = { 160, 120, 320, 240, 0.1f, 1.0f };
-	SDL_Rect scissorRect = { 320, 240, 320, 240 };
+	SDL_GPUViewport smallViewport = { 260, 220, 420, 340, 0.1f, 1.0f };
+	SDL_Rect scissorRect = { 220, 140, 220, 140 };
 	bool useWireframeMode = false;
 	bool useSmallViewport = false;
 	bool useScissorRect = false;

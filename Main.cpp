@@ -2,9 +2,9 @@
 #include <SDL3/SDL_main.h>
 #include "Renderer.hpp"
 //#include "Scene01Clear.hpp"
-#include "Scene02Triangle.hpp"
+//#include "Scene02Triangle.hpp"
 //#include "Scene03TriangleVertexBuffer.hpp"
-//#include "Scene04TriangleCullModes.hpp"
+#include "Scene04TriangleCullModes.hpp"
 //#include "Scene05TriangleStencil.hpp"
 //#include "Scene06TriangleInstances.hpp"
 //#include "Scene07TextureQuad.hpp"
@@ -18,7 +18,7 @@ int main(int argc, char** argv) {
 	Time time{};
 	window.Init();
 	renderer.Init(window);
-	auto scene = std::make_unique<Scene02Triangle>();
+	auto scene = std::make_unique<Scene04TriangleCullModes>();
 	scene->Load(renderer);
 	bool isRunning{ true };
 	while (isRunning) {
