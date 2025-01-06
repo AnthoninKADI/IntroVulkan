@@ -18,5 +18,20 @@ public:
 	SDL_GPUCommandBuffer* cmdBuffer{ nullptr };
 	SDL_GPUTexture* swapchainTexture{ nullptr };
 	SDL_GPURenderPass* renderPass{ nullptr };
+	SDL_GPUShader* LoadShader(
+		const char* basePath,
+		const char* shaderFilename,
+		Uint32 samplerCount,
+		Uint32 uniformBufferCount,
+		Uint32 storageBufferCount,
+		Uint32 storageTextureCount
+	);
+	void ReleaseShader(SDL_GPUShader* shader) const;
+	SDL_GPUGraphicsPipeline* CreateGPUGraphicsPipeline(const SDL_GPUGraphicsPipelineCreateInfo& createInfo) const;
+	void BindGraphicsPipeline(SDL_GPUGraphicsPipeline* pipeline) const;
+	void DrawPrimitives(int numVertices, int numInstances, int firstVertex, int firstInstance) const;
+	void SetViewport(const SDL_GPUViewport& viewport) const;
+	void SetScissorRect(const SDL_Rect& rect) const;
+	void ReleaseGraphicsPipeline(SDL_GPUGraphicsPipeline* pipeline) const;
 };
 #endif //RENDERER_HPP
