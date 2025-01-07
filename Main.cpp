@@ -4,11 +4,11 @@
 //#include "Scene01Clear.hpp"
 //#include "Scene02Triangle.hpp"
 //#include "Scene03TriangleVertexBuffer.hpp"
-#include "Scene04TriangleCullModes.hpp"
+//#include "Scene04TriangleCullModes.hpp"
 //#include "Scene05TriangleStencil.hpp"
 //#include "Scene06TriangleInstances.hpp"
 //#include "Scene07TextureQuad.hpp"
-//#include "Scene08TextureQuadMoving.hpp"
+#include "Scene08TextureQuadMoving.hpp"
 #include "Time.hpp"
 #include "Window.hpp"
 using namespace std;
@@ -18,7 +18,7 @@ int main(int argc, char** argv) {
 	Time time{};
 	window.Init();
 	renderer.Init(window);
-	auto scene = std::make_unique<Scene04TriangleCullModes>();
+	auto scene = std::make_unique<Scene08TextureQuadMoving>();
 	scene->Load(renderer);
 	bool isRunning{ true };
 	while (isRunning) {

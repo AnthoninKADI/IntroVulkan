@@ -7,6 +7,12 @@
 },
 {
   "directory": "C:/Users/anthonin.kadi/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug",
+  "command": "C:\\VisualStudio\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\out\\build\\x64-Debug\\_deps\\sdl3-build\\include-revision\" -I\"C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\out\\build\\x64-Debug\\_deps\\sdl3-src\\include\" /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /FoCMakeFiles\\graphics-SDL3.dir\\Mat4.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Mat4.cpp\"",
+  "file": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Mat4.cpp",
+  "output": "CMakeFiles\\graphics-SDL3.dir\\Mat4.cpp.obj"
+},
+{
+  "directory": "C:/Users/anthonin.kadi/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug",
   "command": "C:\\VisualStudio\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\out\\build\\x64-Debug\\_deps\\sdl3-build\\include-revision\" -I\"C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\out\\build\\x64-Debug\\_deps\\sdl3-src\\include\" /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /FoCMakeFiles\\graphics-SDL3.dir\\Renderer.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Renderer.cpp\"",
   "file": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Renderer.cpp",
   "output": "CMakeFiles\\graphics-SDL3.dir\\Renderer.cpp.obj"
@@ -34,6 +40,24 @@
   "command": "C:\\VisualStudio\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\out\\build\\x64-Debug\\_deps\\sdl3-build\\include-revision\" -I\"C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\out\\build\\x64-Debug\\_deps\\sdl3-src\\include\" /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /FoCMakeFiles\\graphics-SDL3.dir\\Scene04TriangleCullModes.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene04TriangleCullModes.cpp\"",
   "file": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene04TriangleCullModes.cpp",
   "output": "CMakeFiles\\graphics-SDL3.dir\\Scene04TriangleCullModes.cpp.obj"
+},
+{
+  "directory": "C:/Users/anthonin.kadi/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug",
+  "command": "C:\\VisualStudio\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\out\\build\\x64-Debug\\_deps\\sdl3-build\\include-revision\" -I\"C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\out\\build\\x64-Debug\\_deps\\sdl3-src\\include\" /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /FoCMakeFiles\\graphics-SDL3.dir\\Scene06TriangleInstances.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene06TriangleInstances.cpp\"",
+  "file": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene06TriangleInstances.cpp",
+  "output": "CMakeFiles\\graphics-SDL3.dir\\Scene06TriangleInstances.cpp.obj"
+},
+{
+  "directory": "C:/Users/anthonin.kadi/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug",
+  "command": "C:\\VisualStudio\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\out\\build\\x64-Debug\\_deps\\sdl3-build\\include-revision\" -I\"C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\out\\build\\x64-Debug\\_deps\\sdl3-src\\include\" /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /FoCMakeFiles\\graphics-SDL3.dir\\Scene07TextureQuad.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene07TextureQuad.cpp\"",
+  "file": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene07TextureQuad.cpp",
+  "output": "CMakeFiles\\graphics-SDL3.dir\\Scene07TextureQuad.cpp.obj"
+},
+{
+  "directory": "C:/Users/anthonin.kadi/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug",
+  "command": "C:\\VisualStudio\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\out\\build\\x64-Debug\\_deps\\sdl3-build\\include-revision\" -I\"C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\out\\build\\x64-Debug\\_deps\\sdl3-src\\include\" /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /FoCMakeFiles\\graphics-SDL3.dir\\Scene08TextureQuadMoving.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene08TextureQuadMoving.cpp\"",
+  "file": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene08TextureQuadMoving.cpp",
+  "output": "CMakeFiles\\graphics-SDL3.dir\\Scene08TextureQuadMoving.cpp.obj"
 },
 {
   "directory": "C:/Users/anthonin.kadi/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug",

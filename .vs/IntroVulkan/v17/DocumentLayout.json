@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene04TriangleCullModes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scene04TriangleCullModes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene04TriangleCullModes.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scene04TriangleCullModes.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene03TriangleVertexBuffer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scene03TriangleVertexBuffer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene03TriangleVertexBuffer.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scene03TriangleVertexBuffer.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene08TextureQuadMoving.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scene08TextureQuadMoving.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene08TextureQuadMoving.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scene08TextureQuadMoving.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Renderer.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -38,97 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Scene04TriangleCullModes.cpp",
-              "DocumentMoniker": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene04TriangleCullModes.cpp",
-              "RelativeDocumentMoniker": "Scene04TriangleCullModes.cpp",
-              "ToolTip": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene04TriangleCullModes.cpp",
-              "RelativeToolTip": "Scene04TriangleCullModes.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-06T11:36:33.558Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Scene04TriangleCullModes.hpp",
-              "DocumentMoniker": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene04TriangleCullModes.hpp",
-              "RelativeDocumentMoniker": "Scene04TriangleCullModes.hpp",
-              "ToolTip": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene04TriangleCullModes.hpp",
-              "RelativeToolTip": "Scene04TriangleCullModes.hpp",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-06T11:36:27.093Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Scene03TriangleVertexBuffer.cpp",
-              "DocumentMoniker": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene03TriangleVertexBuffer.cpp",
-              "RelativeDocumentMoniker": "Scene03TriangleVertexBuffer.cpp",
-              "ToolTip": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene03TriangleVertexBuffer.cpp",
-              "RelativeToolTip": "Scene03TriangleVertexBuffer.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-06T10:43:35.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Scene03TriangleVertexBuffer.hpp",
-              "DocumentMoniker": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene03TriangleVertexBuffer.hpp",
-              "RelativeDocumentMoniker": "Scene03TriangleVertexBuffer.hpp",
-              "ToolTip": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene03TriangleVertexBuffer.hpp",
-              "RelativeToolTip": "Scene03TriangleVertexBuffer.hpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-06T10:43:28.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Renderer.hpp",
-              "DocumentMoniker": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Renderer.hpp",
-              "RelativeDocumentMoniker": "Renderer.hpp",
-              "ToolTip": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Renderer.hpp",
-              "RelativeToolTip": "Renderer.hpp",
-              "ViewState": "AQIAACAAAAAAAAAAAAAAAC4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-06T08:54:59.23Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Renderer.cpp",
               "DocumentMoniker": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Renderer.cpp",
               "RelativeDocumentMoniker": "Renderer.cpp",
               "ToolTip": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Renderer.cpp",
               "RelativeToolTip": "Renderer.cpp",
-              "ViewState": "AQIAAKAAAAAAAAAAAADwv7UAAAAmAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAO0AAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-06T08:55:13.129Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Main.cpp",
-              "DocumentMoniker": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Main.cpp",
-              "RelativeDocumentMoniker": "Main.cpp",
-              "ToolTip": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Main.cpp",
-              "RelativeToolTip": "Main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAgAAAA",
+              "DocumentIndex": 0,
+              "Title": "Scene08TextureQuadMoving.cpp",
+              "DocumentMoniker": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene08TextureQuadMoving.cpp",
+              "RelativeDocumentMoniker": "Scene08TextureQuadMoving.cpp",
+              "ToolTip": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene08TextureQuadMoving.cpp",
+              "RelativeToolTip": "Scene08TextureQuadMoving.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-06T08:32:31.201Z",
+              "WhenOpened": "2025-01-07T11:42:34.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Scene08TextureQuadMoving.hpp",
+              "DocumentMoniker": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene08TextureQuadMoving.hpp",
+              "RelativeDocumentMoniker": "Scene08TextureQuadMoving.hpp",
+              "ToolTip": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Scene08TextureQuadMoving.hpp",
+              "RelativeToolTip": "Scene08TextureQuadMoving.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-07T11:42:28.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Renderer.hpp",
+              "DocumentMoniker": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Renderer.hpp",
+              "RelativeDocumentMoniker": "Renderer.hpp",
+              "ToolTip": "C:\\Users\\anthonin.kadi\\Desktop\\WS Vulkan\\IntroVulkan\\Renderer.hpp",
+              "RelativeToolTip": "Renderer.hpp",
+              "ViewState": "AQIAACoAAAAAAAAAAAAqwDQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-06T08:54:59.23Z",
               "EditorCaption": ""
             }
           ]

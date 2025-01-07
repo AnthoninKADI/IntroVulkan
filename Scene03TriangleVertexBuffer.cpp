@@ -66,8 +66,7 @@ void Scene03TriangleVertexBuffer::Load(Renderer& renderer) {
 
     // Map the transfer buffer and fill it with square data
     auto* transferData = static_cast<PositionColorVertex*>(
-        renderer.MapTransferBuffer(transferBuffer, false)
-        );
+        renderer.MapTransferBuffer(transferBuffer, false));
 
     // Define square vertices (Two triangles forming a square)
     transferData[0] = PositionColorVertex{ -0.5f, -0.5f, 0.0f, 255, 0, 197, 255 }; // Bottom left 
