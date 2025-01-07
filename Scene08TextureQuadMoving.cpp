@@ -10,7 +10,7 @@ void Scene08TextureQuadMoving::Load(Renderer& renderer) {
 	vertexShader = renderer.LoadShader(basePath, "TexturedQuadWithMatrix.vert", 0, 1, 0, 0);
 	fragmentShader = renderer.LoadShader(basePath, "TexturedQuadWithMultiplyColor.frag",1, 1, 0, 0);
 
-	SDL_Surface* imageData = renderer.LoadBMPImage(basePath, "ravioli.bmp", 4);
+	SDL_Surface* imageData = renderer.LoadBMPImage(basePath, "White.bmp", 4);
 	if (imageData == nullptr) {
 		SDL_Log("Could not load image data!");
 	}
@@ -70,16 +70,16 @@ sampler = renderer.CreateSampler(SDL_GPUSamplerCreateInfo{
 	.min_filter = SDL_GPU_FILTER_NEAREST,
 	.mag_filter = SDL_GPU_FILTER_NEAREST,
 	.mipmap_mode = SDL_GPU_SAMPLERMIPMAPMODE_NEAREST,
-	.address_mode_u = SDL_GPU_SAMPLERADDRESSMODE_CLAMP_TO_EDGE,
-	.address_mode_v = SDL_GPU_SAMPLERADDRESSMODE_CLAMP_TO_EDGE,
-	.address_mode_w = SDL_GPU_SAMPLERADDRESSMODE_CLAMP_TO_EDGE,
+	.address_mode_u = SDL_GPU_SAMPLERADDRESSMODE_REPEAT,
+	.address_mode_v = SDL_GPU_SAMPLERADDRESSMODE_REPEAT,
+	.address_mode_w = SDL_GPU_SAMPLERADDRESSMODE_REPEAT,
 });
 
 
 	// Create the vertex buffer
 	SDL_GPUBufferCreateInfo vertexBufferCreateInfo = {
 		.usage = SDL_GPU_BUFFERUSAGE_VERTEX,
-		.size = sizeof(PositionTextureVertex) * 4
+		.size = sizeof(PositionTextureVertex) * 8
 	};
 	vertexBuffer = renderer.CreateBuffer(vertexBufferCreateInfo);
 	renderer.SetBufferName(vertexBuffer, "Ravioli Vertex Buffer");
@@ -87,7 +87,7 @@ sampler = renderer.CreateSampler(SDL_GPUSamplerCreateInfo{
 	// Create the index buffer
 	SDL_GPUBufferCreateInfo indexBufferCreateInfo = {
 		.usage = SDL_GPU_BUFFERUSAGE_INDEX,
-		.size = sizeof(Uint16) * 6
+		.size = sizeof(Uint16) * 36
 	};
 	indexBuffer = renderer.CreateBuffer(indexBufferCreateInfo);
 
@@ -107,7 +107,7 @@ sampler = renderer.CreateSampler(SDL_GPUSamplerCreateInfo{
 	// Set the buffer data
 	SDL_GPUTransferBufferCreateInfo transferBufferCreateInfo = {
 		.usage = SDL_GPU_TRANSFERBUFFERUSAGE_UPLOAD,
-		.size = (sizeof(PositionTextureVertex) * 4) + (sizeof(Uint16) * 6),
+		.size = (sizeof(PositionTextureVertex) * 8) + (sizeof(Uint16) * 36),
 	};
 	SDL_GPUTransferBuffer* transferBuffer =
 		renderer.CreateTransferBuffer(transferBufferCreateInfo);
@@ -116,21 +116,68 @@ sampler = renderer.CreateSampler(SDL_GPUSamplerCreateInfo{
 	auto transferData = static_cast<PositionTextureVertex*>(
 		renderer.MapTransferBuffer(transferBuffer, false)
 	);
-	transferData[0] = PositionTextureVertex{ -0.5f, -0.5f, 0, 0, 0 };
-	transferData[1] = PositionTextureVertex{ 0.5f, -0.5f, 0, 1, 0 };
-	transferData[2] = PositionTextureVertex{ 0.5f, 0.5f, 0, 1, 1 };
-	transferData[3] = PositionTextureVertex{ -0.5f, 0.5f, 0, 0, 1 };
-	auto indexData = reinterpret_cast<Uint16*>(&transferData[4]);
+	transferData[0] = PositionTextureVertex{ 0, 0, 0, 0, 0 };
+	transferData[1] = PositionTextureVertex{ 0.5f, 0, 0, 4, 0 };
+	transferData[2] = PositionTextureVertex{ 0, 0.5f, 0, 4, 4 };
+	transferData[3] = PositionTextureVertex{ 0, 0, 0.5f, 0, 4 };
+
+	transferData[4] = PositionTextureVertex{ 0.5f, 0.5f, 0, 0, 0 };
+	transferData[5] = PositionTextureVertex{ 0.5f, 0, 0.5f, 4, 0 };
+	transferData[6] = PositionTextureVertex{ 0, 0.5f, 0.5f, 4, 4 };
+	transferData[7] = PositionTextureVertex{ 0.5f, 0.5f,0.5f, 0, 4 };
+
+	auto indexData = reinterpret_cast<Uint16*>(&transferData[8]);
 	indexData[0] = 0;
 	indexData[1] = 1;
 	indexData[2] = 2;
+
 	indexData[3] = 0;
 	indexData[4] = 2;
 	indexData[5] = 3;
+
+	indexData[6] = 1;
+	indexData[7] = 2;
+	indexData[8] = 5;
+
+	indexData[9] = 2;
+	indexData[10] = 5;
+	indexData[11] = 6;
+
+	indexData[12] = 2;
+	indexData[13] = 3;
+	indexData[14] = 6;
+
+	indexData[15] = 3;
+	indexData[16] = 6;
+	indexData[17] = 7;
+
+	indexData[18] = 0;
+	indexData[19] = 4;
+	indexData[20] = 3;
+
+	indexData[21] = 3;
+	indexData[22] = 4;
+	indexData[23] = 7;
+
+	indexData[24] = 4;
+	indexData[25] = 5;
+	indexData[26] = 7;
+
+	indexData[27] = 5;
+	indexData[28] = 7;
+	indexData[29] = 6;
+
+	indexData[30] = 0;
+	indexData[31] = 1;
+	indexData[32] = 4;
+
+	indexData[33] = 1;
+	indexData[34] = 4;
+	indexData[35] = 5;
 	renderer.UnmapTransferBuffer(transferBuffer);
 
 	// Setup texture transfer buffer
-	Uint32 bufferSize = imageData->w * imageData->h * 4;
+	Uint32 bufferSize = imageData->w * imageData->h * 8;
 	SDL_GPUTransferBufferCreateInfo textureTransferBufferCreateInfo{
 		.usage = SDL_GPU_TRANSFERBUFFERUSAGE_UPLOAD,
 		.size = bufferSize
@@ -153,16 +200,16 @@ sampler = renderer.CreateSampler(SDL_GPUSamplerCreateInfo{
 	SDL_GPUBufferRegion vertexBufferRegion{
 		.buffer = vertexBuffer,
 		.offset = 0,
-		.size = sizeof(PositionTextureVertex) * 4
+		.size = sizeof(PositionTextureVertex) * 8
 	};
 	SDL_GPUTransferBufferLocation transferIndexBufferLocation{
 		.transfer_buffer = transferBuffer,
-		.offset = sizeof(PositionTextureVertex) * 4
+		.offset = sizeof(PositionTextureVertex) * 8
 	};
 	SDL_GPUBufferRegion indexBufferRegion{
 		.buffer = indexBuffer,
 		.offset = 0,
-		.size = sizeof(Uint16) * 6
+		.size = sizeof(Uint16) * 36
 	};
 	SDL_GPUTextureTransferInfo textureBufferLocation{
 		.transfer_buffer = textureTransferBuffer,
@@ -209,45 +256,46 @@ void Scene08TextureQuadMoving::Draw(Renderer& renderer) {
 	sampler };
 	renderer.BindFragmentSamplers(0, textureSamplerBinding, 1);
 
-	// Bop-left
+	// 1
 	Mat4 matrixUniform =
 		Mat4::CreateRotationZ(time * 0.2f) * 
-		Mat4::CreateTranslation(-0.5f, -0.5f, 0);
+		Mat4::CreateRotationY(time * 0.2f) * 
+		Mat4::CreateTranslation(0, 0, 0);
 	renderer.PushVertexUniformData(0, &matrixUniform, sizeof(matrixUniform));
-	FragMultiplyUniform fragMultiplyUniform0{ 0, 0 + SDL_sinf(time) * 0, 1.0f, 1.0f };
+	FragMultiplyUniform fragMultiplyUniform0{ 1.0f, 1.0f + SDL_sinf(time) * 1.0f, 1.0f, 1.0f };
 	renderer.PushFragmentUniformData(0, &fragMultiplyUniform0,
 		sizeof(FragMultiplyUniform));
 
-	renderer.DrawIndexedPrimitives(6, 1, 0, 0, 0);
+	renderer.DrawIndexedPrimitives(36, 1, 0, 0, 0);
 
-	// Bop-right
+	// 2
 	matrixUniform =
 		Mat4::CreateRotationZ((2.0f * SDL_PI_F) - time) *
-		Mat4::CreateTranslation(0.5f, -0.5f, 0);
+		Mat4::CreateTranslation(10.5f, -0.5f, 0);
 	renderer.PushVertexUniformData(0, &matrixUniform, sizeof(matrixUniform));
 	FragMultiplyUniform fragMultiplyUniform1{ 1.0f, 0 + SDL_cosf(time) * 0, 1.0f, 1.0f };
 	renderer.PushFragmentUniformData(0, &fragMultiplyUniform1,
 		sizeof(FragMultiplyUniform));
-	renderer.DrawIndexedPrimitives(6, 1, 0, 0, 0);
+	renderer.DrawIndexedPrimitives(36, 1, 0, 0, 0);
 
-	// Top-left
+	// 3
 	matrixUniform =
 		Mat4::CreateRotationZ(time) *
-		Mat4::CreateTranslation(-0.5f, 0.5f, 0);
+		Mat4::CreateTranslation(10.5f, 0.5f, 0);
 	renderer.PushVertexUniformData(0, &matrixUniform, sizeof(matrixUniform));
 	FragMultiplyUniform fragMultiplyUniform2{ 0, 1.0f + SDL_sinf(time) * 0, 1.0f, 1.0f };
 	renderer.PushFragmentUniformData(0, &fragMultiplyUniform2,
 		sizeof(FragMultiplyUniform));
-	renderer.DrawIndexedPrimitives(6, 1, 0, 0, 0);
+	renderer.DrawIndexedPrimitives(36, 1, 0, 0, 0);
 
-	// Top-right
+	// 4
 	matrixUniform =
 		Mat4::CreateRotationZ(time * 2.0f) *
-		Mat4::CreateTranslation(0.5f, 0.5f, 0);
+		Mat4::CreateTranslation(10.5f, 0.5f, 0);
 	renderer.PushVertexUniformData(0, &matrixUniform, sizeof(matrixUniform));
 	FragMultiplyUniform fragMultiplyUniform3{ 1.0f, 0.5f + SDL_cosf(time) * 1.0f, 1.0f, 1.0f };
 	renderer.PushFragmentUniformData(0, &fragMultiplyUniform3,
 		sizeof(FragMultiplyUniform));
-	renderer.DrawIndexedPrimitives(6, 1, 0, 0, 0);
+	renderer.DrawIndexedPrimitives(36, 1, 0, 0, 0);
 	renderer.End();
 }
