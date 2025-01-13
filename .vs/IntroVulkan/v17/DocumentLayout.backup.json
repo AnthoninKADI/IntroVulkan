@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\WS Vulkan\\IntroVulkan\\",
+  "WorkspaceRootPath": "C:\\Users\\Anthonin\\Desktop\\WS Vulkan\\IntroVulkan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\WS Vulkan\\IntroVulkan\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Anthonin\\Desktop\\WS Vulkan\\IntroVulkan\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\WS Vulkan\\IntroVulkan\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Anthonin\\Desktop\\WS Vulkan\\IntroVulkan\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\WS Vulkan\\IntroVulkan\\Scene08TextureQuadMoving.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Anthonin\\Desktop\\WS Vulkan\\IntroVulkan\\Scene08TextureQuadMoving.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scene08TextureQuadMoving.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\WS Vulkan\\IntroVulkan\\Scene08TextureQuadMoving.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Anthonin\\Desktop\\WS Vulkan\\IntroVulkan\\Scene08TextureQuadMoving.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scene08TextureQuadMoving.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\WS Vulkan\\IntroVulkan\\Renderer.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Anthonin\\Desktop\\WS Vulkan\\IntroVulkan\\Renderer.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Renderer.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -36,9 +36,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Main.cpp",
-              "DocumentMoniker": "F:\\WS Vulkan\\IntroVulkan\\Main.cpp",
+              "DocumentMoniker": "C:\\Users\\Anthonin\\Desktop\\WS Vulkan\\IntroVulkan\\Main.cpp",
               "RelativeDocumentMoniker": "Main.cpp",
-              "ToolTip": "F:\\WS Vulkan\\IntroVulkan\\Main.cpp",
+              "ToolTip": "C:\\Users\\Anthonin\\Desktop\\WS Vulkan\\IntroVulkan\\Main.cpp",
               "RelativeToolTip": "Main.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -48,9 +48,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Scene08TextureQuadMoving.cpp",
-              "DocumentMoniker": "F:\\WS Vulkan\\IntroVulkan\\Scene08TextureQuadMoving.cpp",
+              "DocumentMoniker": "C:\\Users\\Anthonin\\Desktop\\WS Vulkan\\IntroVulkan\\Scene08TextureQuadMoving.cpp",
               "RelativeDocumentMoniker": "Scene08TextureQuadMoving.cpp",
-              "ToolTip": "F:\\WS Vulkan\\IntroVulkan\\Scene08TextureQuadMoving.cpp",
+              "ToolTip": "C:\\Users\\Anthonin\\Desktop\\WS Vulkan\\IntroVulkan\\Scene08TextureQuadMoving.cpp",
               "RelativeToolTip": "Scene08TextureQuadMoving.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwBAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -60,9 +60,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Scene08TextureQuadMoving.hpp",
-              "DocumentMoniker": "F:\\WS Vulkan\\IntroVulkan\\Scene08TextureQuadMoving.hpp",
+              "DocumentMoniker": "C:\\Users\\Anthonin\\Desktop\\WS Vulkan\\IntroVulkan\\Scene08TextureQuadMoving.hpp",
               "RelativeDocumentMoniker": "Scene08TextureQuadMoving.hpp",
-              "ToolTip": "F:\\WS Vulkan\\IntroVulkan\\Scene08TextureQuadMoving.hpp",
+              "ToolTip": "C:\\Users\\Anthonin\\Desktop\\WS Vulkan\\IntroVulkan\\Scene08TextureQuadMoving.hpp",
               "RelativeToolTip": "Scene08TextureQuadMoving.hpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -72,11 +72,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Renderer.cpp",
-              "DocumentMoniker": "F:\\WS Vulkan\\IntroVulkan\\Renderer.cpp",
+              "DocumentMoniker": "C:\\Users\\Anthonin\\Desktop\\WS Vulkan\\IntroVulkan\\Renderer.cpp",
               "RelativeDocumentMoniker": "Renderer.cpp",
-              "ToolTip": "F:\\WS Vulkan\\IntroVulkan\\Renderer.cpp",
+              "ToolTip": "C:\\Users\\Anthonin\\Desktop\\WS Vulkan\\IntroVulkan\\Renderer.cpp",
               "RelativeToolTip": "Renderer.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwBoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-06T08:55:13.129Z",
               "EditorCaption": ""
@@ -85,9 +85,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Renderer.hpp",
-              "DocumentMoniker": "F:\\WS Vulkan\\IntroVulkan\\Renderer.hpp",
+              "DocumentMoniker": "C:\\Users\\Anthonin\\Desktop\\WS Vulkan\\IntroVulkan\\Renderer.hpp",
               "RelativeDocumentMoniker": "Renderer.hpp",
-              "ToolTip": "F:\\WS Vulkan\\IntroVulkan\\Renderer.hpp",
+              "ToolTip": "C:\\Users\\Anthonin\\Desktop\\WS Vulkan\\IntroVulkan\\Renderer.hpp",
               "RelativeToolTip": "Renderer.hpp",
               "ViewState": "AQIAACoAAAAAAAAAAAAqwDQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",

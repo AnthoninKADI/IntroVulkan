@@ -22,14 +22,14 @@ function(check_file_hash has_hash hash_is_good)
   set("${has_hash}" TRUE PARENT_SCOPE)
 
   message(STATUS "verifying file...
-       file='F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/preview-3.1.6.zip'")
+       file='C:/Users/Anthonin/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/preview-3.1.6.zip'")
 
-  file("" "F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/preview-3.1.6.zip" actual_value)
+  file("" "C:/Users/Anthonin/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/preview-3.1.6.zip" actual_value)
 
   if(NOT "${actual_value}" STREQUAL "")
     set("${hash_is_good}" FALSE PARENT_SCOPE)
     message(STATUS " hash of
-    F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/preview-3.1.6.zip
+    C:/Users/Anthonin/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/preview-3.1.6.zip
   does not match expected value
     expected: ''
       actual: '${actual_value}'")
@@ -71,32 +71,32 @@ function(sleep_before_download attempt)
   execute_process(COMMAND "${CMAKE_COMMAND}" -E sleep "${sleep_seconds}")
 endfunction()
 
-if(EXISTS "F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/preview-3.1.6.zip")
+if(EXISTS "C:/Users/Anthonin/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/preview-3.1.6.zip")
   check_file_hash(has_hash hash_is_good)
   if(has_hash)
     if(hash_is_good)
       message(STATUS "File already exists and hash match (skip download):
-  file='F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/preview-3.1.6.zip'
+  file='C:/Users/Anthonin/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/preview-3.1.6.zip'
   =''"
       )
       return()
     else()
       message(STATUS "File already exists but hash mismatch. Removing...")
-      file(REMOVE "F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/preview-3.1.6.zip")
+      file(REMOVE "C:/Users/Anthonin/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/preview-3.1.6.zip")
     endif()
   else()
     message(STATUS "File already exists but no hash specified (use URL_HASH):
-  file='F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/preview-3.1.6.zip'
+  file='C:/Users/Anthonin/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/preview-3.1.6.zip'
 Old file will be removed and new file downloaded from URL."
     )
-    file(REMOVE "F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/preview-3.1.6.zip")
+    file(REMOVE "C:/Users/Anthonin/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/preview-3.1.6.zip")
   endif()
 endif()
 
 set(retry_number 5)
 
 message(STATUS "Downloading...
-   dst='F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/preview-3.1.6.zip'
+   dst='C:/Users/Anthonin/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/preview-3.1.6.zip'
    timeout='none'
    inactivity timeout='none'"
 )
@@ -118,7 +118,7 @@ foreach(i RANGE ${retry_number})
 
       file(
         DOWNLOAD
-        "${url}" "F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/preview-3.1.6.zip"
+        "${url}" "C:/Users/Anthonin/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/preview-3.1.6.zip"
         SHOW_PROGRESS
         # no TIMEOUT
         # no INACTIVITY_TIMEOUT
@@ -135,7 +135,7 @@ foreach(i RANGE ${retry_number})
         check_file_hash(has_hash hash_is_good)
         if(has_hash AND NOT hash_is_good)
           message(STATUS "Hash mismatch, removing...")
-          file(REMOVE "F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/preview-3.1.6.zip")
+          file(REMOVE "C:/Users/Anthonin/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/preview-3.1.6.zip")
         else()
           message(STATUS "Downloading... done")
           return()

@@ -20,8 +20,8 @@ project(sdl3-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(sdl3-populate
                      "UPDATE_DISCONNECTED" "False" "DOWNLOAD_EXTRACT_TIMESTAMP" "FALSE" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "URL" "https://github.com/libsdl-org/SDL/archive/refs/tags/preview-3.1.6.zip"
-                    SOURCE_DIR          "F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-src"
-                    BINARY_DIR          "F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-build"
+                    SOURCE_DIR          "C:/Users/Anthonin/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-src"
+                    BINARY_DIR          "C:/Users/Anthonin/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

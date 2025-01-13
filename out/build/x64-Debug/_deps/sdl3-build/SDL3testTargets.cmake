@@ -59,7 +59,7 @@ set_target_properties(SDL3::SDL3_test PROPERTIES
 set_property(TARGET SDL3::SDL3_test APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(SDL3::SDL3_test PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "C"
-  IMPORTED_LOCATION_DEBUG "F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-build/SDL3_test.lib"
+  IMPORTED_LOCATION_DEBUG "C:/Users/Anthonin/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-build/SDL3_test.lib"
   )
 
 # Make sure the targets which have been exported in some other

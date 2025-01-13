@@ -1,8 +1,8 @@
-if (NOT EXISTS "F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/install_manifest.txt\"")
+if (NOT EXISTS "C:/Users/Anthonin/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"C:/Users/Anthonin/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/install_manifest.txt\"")
 endif()
 
-file(READ "F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/install_manifest.txt" files)
+file(READ "C:/Users/Anthonin/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach(file ${files})
     message(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")
