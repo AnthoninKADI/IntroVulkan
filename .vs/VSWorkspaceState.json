@@ -8,8 +8,8 @@
   "ExpandedNodes": [
     "",
     "\\Content",
-    "\\Content\\Shaders"
+    "\\Content\\Shaders",
+    "\\Content\\Shaders\\Compiled"
   ],
-  "SelectedNode": "\\Mat4.hpp",
   "PreviewInSolutionExplorer": false
 }

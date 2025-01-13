@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "C:/Users/anthonin.kadi/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-src"
-  "C:/Users/anthonin.kadi/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-build"
-  "C:/Users/anthonin.kadi/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix"
-  "C:/Users/anthonin.kadi/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/tmp"
-  "C:/Users/anthonin.kadi/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/sdl3-populate-stamp"
-  "C:/Users/anthonin.kadi/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src"
-  "C:/Users/anthonin.kadi/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/sdl3-populate-stamp"
+  "F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-src"
+  "F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-build"
+  "F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix"
+  "F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/tmp"
+  "F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/sdl3-populate-stamp"
+  "F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src"
+  "F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/sdl3-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/Users/anthonin.kadi/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/sdl3-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/sdl3-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "C:/Users/anthonin.kadi/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/sdl3-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/_deps/sdl3-subbuild/sdl3-populate-prefix/src/sdl3-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

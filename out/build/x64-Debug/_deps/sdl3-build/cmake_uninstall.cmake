@@ -1,13 +1,13 @@
-if (NOT EXISTS "C:/Users/anthonin.kadi/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"C:/Users/anthonin.kadi/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/install_manifest.txt\"")
+if (NOT EXISTS "F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/install_manifest.txt\"")
 endif()
 
-file(READ "C:/Users/anthonin.kadi/Desktop/WS Vulkan/IntroVulkan/out/build/x64-Debug/install_manifest.txt" files)
+file(READ "F:/WS Vulkan/IntroVulkan/out/build/x64-Debug/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach(file ${files})
     message(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")
     execute_process(
-        COMMAND C:/VisualStudio/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe -E remove "$ENV{DESTDIR}${file}"
+        COMMAND C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe -E remove "$ENV{DESTDIR}${file}"
         OUTPUT_VARIABLE rm_out
         RESULT_VARIABLE rm_retval
     )

@@ -116,17 +116,18 @@ sampler = renderer.CreateSampler(SDL_GPUSamplerCreateInfo{
 	auto transferData = static_cast<PositionTextureVertex*>(
 		renderer.MapTransferBuffer(transferBuffer, false)
 	);
-	transferData[0] = PositionTextureVertex{ 0, 0, 0, 0, 0 };
-	transferData[1] = PositionTextureVertex{ 0.5f, 0, 0, 4, 0 };
-	transferData[2] = PositionTextureVertex{ 0, 0.5f, 0, 4, 4 };
-	transferData[3] = PositionTextureVertex{ 0, 0, 0.5f, 0, 4 };
+	transferData[0] = PositionTextureVertex{ 0, 0, 0, 0, 0 };      
+	transferData[1] = PositionTextureVertex{ 0.5f, 0, 0, 1, 0 };    
+	transferData[2] = PositionTextureVertex{ 0.5f, 0.5f, 0, 1, 1 }; 
+	transferData[3] = PositionTextureVertex{ 0, 0.5f, 0, 0, 1 };    
 
-	transferData[4] = PositionTextureVertex{ 0.5f, 0.5f, 0, 0, 0 };
-	transferData[5] = PositionTextureVertex{ 0.5f, 0, 0.5f, 4, 0 };
-	transferData[6] = PositionTextureVertex{ 0, 0.5f, 0.5f, 4, 4 };
-	transferData[7] = PositionTextureVertex{ 0.5f, 0.5f,0.5f, 0, 4 };
+	transferData[4] = PositionTextureVertex{ 0, 0, 0.5f, 0, 0 };    
+	transferData[5] = PositionTextureVertex{ 0.5f, 0, 0.5f, 1, 0 }; 
+	transferData[6] = PositionTextureVertex{ 0.5f, 0.5f, 0.5f, 1, 1 }; 
+	transferData[7] = PositionTextureVertex{ 0, 0.5f, 0.5f, 0, 1 };    
 
 	auto indexData = reinterpret_cast<Uint16*>(&transferData[8]);
+
 	indexData[0] = 0;
 	indexData[1] = 1;
 	indexData[2] = 2;
@@ -135,45 +136,47 @@ sampler = renderer.CreateSampler(SDL_GPUSamplerCreateInfo{
 	indexData[4] = 2;
 	indexData[5] = 3;
 
-	indexData[6] = 1;
-	indexData[7] = 2;
-	indexData[8] = 5;
+	indexData[6] = 4;
+	indexData[7] = 5;
+	indexData[8] = 6;
 
-	indexData[9] = 2;
-	indexData[10] = 5;
-	indexData[11] = 6;
+	indexData[9] = 4;
+	indexData[10] = 6;
+	indexData[11] = 7;
 
-	indexData[12] = 2;
+	indexData[12] = 0;
 	indexData[13] = 3;
-	indexData[14] = 6;
+	indexData[14] = 7;
 
-	indexData[15] = 3;
-	indexData[16] = 6;
-	indexData[17] = 7;
+	indexData[15] = 0;
+	indexData[16] = 7;
+	indexData[17] = 4;
 
-	indexData[18] = 0;
-	indexData[19] = 4;
-	indexData[20] = 3;
+	indexData[18] = 1;
+	indexData[19] = 5;
+	indexData[20] = 6;
 
-	indexData[21] = 3;
-	indexData[22] = 4;
-	indexData[23] = 7;
+	indexData[21] = 1;
+	indexData[22] = 6;
+	indexData[23] = 2;
 
-	indexData[24] = 4;
-	indexData[25] = 5;
-	indexData[26] = 7;
+	indexData[24] = 3;
+	indexData[25] = 2;
+	indexData[26] = 6;
 
-	indexData[27] = 5;
-	indexData[28] = 7;
-	indexData[29] = 6;
+	indexData[27] = 3;
+	indexData[28] = 6;
+	indexData[29] = 7;
 
 	indexData[30] = 0;
 	indexData[31] = 1;
-	indexData[32] = 4;
+	indexData[32] = 5;
 
-	indexData[33] = 1;
-	indexData[34] = 4;
-	indexData[35] = 5;
+	indexData[33] = 0;
+	indexData[34] = 5;
+	indexData[35] = 4;
+
+
 	renderer.UnmapTransferBuffer(transferBuffer);
 
 	// Setup texture transfer buffer

@@ -11,6 +11,7 @@
 #include "Scene08TextureQuadMoving.hpp"
 #include "Time.hpp"
 #include "Window.hpp"
+
 using namespace std;
 int main(int argc, char** argv) {
 	Window window{};
